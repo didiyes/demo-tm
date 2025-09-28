@@ -1,0 +1,8 @@
+      - name: Run test-report.js
+        run: node test-report.js
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v2
+        with:
+          name: QA-Test-Report
+          path: report.html
