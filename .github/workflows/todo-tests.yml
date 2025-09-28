@@ -1,0 +1,29 @@
+name: Todo API Tests
+
+on: [push]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install Newman & Reporter
+        run: |
+          npm install -g newman newman-reporter-htmlextra
+
+      - name: Run Postman collection
+        run: |
+          newman run todo_collection.json -r htmlextra --reporter-htmlextra-export report.html
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Todo-API-Report
+          path: report.html
