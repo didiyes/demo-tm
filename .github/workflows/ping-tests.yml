@@ -1,0 +1,30 @@
+name: Ping API Tests
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Newman
+        run: npm install -g newman newman-reporter-htmlextra
+
+      - name: Run Ping API collection
+        run: newman run ping_collection.json -r htmlextra --reporter-htmlextra-export ping-report.html
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ping-API-Report
+          path: ping-report.html
