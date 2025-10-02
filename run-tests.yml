@@ -1,0 +1,21 @@
+name: Run Postman Demo Collections
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Newman
+        run: npm install -g newman newman-reporter-html
+      - name: Run Users Collection
+        run: newman run QA_Demo_Users.json -r cli,html --reporter-html-export report_users.html
+      - name: Run Posts Collection
+        run: newman run QA_Demo_Posts.json -r cli,html --reporter-html-export report_posts.html
+      - name: Upload reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: postman-reports
+          path: |
+            report_users.html
+            report_posts.html
