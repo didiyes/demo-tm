@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1759132207529,404,GET Users,200,OK,Users Load 1-1,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,396,0,357
+1759132207935,104,GET Users,200,OK,Users Load 1-1,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,103,0,52
+1759132208040,25,GET Users,200,OK,Users Load 1-1,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,24,0,14
+1759132208065,84,GET Users,200,OK,Users Load 1-1,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,81,0,23
+1759132208150,24,GET Users,200,OK,Users Load 1-1,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,22,0,13
+1759132208433,26,GET Users,200,OK,Users Load 1-2,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,25,0,16
+1759132208460,61,GET Users,200,OK,Users Load 1-2,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,60,0,10
+1759132208522,26,GET Users,200,OK,Users Load 1-2,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,25,0,12
+1759132208548,67,GET Users,200,OK,Users Load 1-2,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,66,0,56
+1759132208616,64,GET Users,200,OK,Users Load 1-2,text,true,,6861,130,1,1,https://jsonplaceholder.typicode.com/users,62,0,53

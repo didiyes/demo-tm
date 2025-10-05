@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "6f5fe7fa-13ee-4ca8-946a-dc128b1ac565",
+		"name": "Smoke API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14931381",
+		"_collection_link": "https://solar-firefly-292134.postman.co/workspace/CI-CD~c2218dc6-5c27-4d6f-8246-b224c1179e4f/collection/14931381-6f5fe7fa-13ee-4ca8-946a-dc128b1ac565?action=share&source=collection_link&creator=14931381"
+	},
+	"item": [
+		{
+			"name": "New Health - Users list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "user_details",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subscription by Userequest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
